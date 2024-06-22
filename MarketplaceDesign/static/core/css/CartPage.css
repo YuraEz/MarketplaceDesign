@@ -1,0 +1,228 @@
+/* Header */
+
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: Nunito Sans;
+}
+
+.header-line
+{
+    position: fixed;
+    top: 0;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 70px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo
+{
+    margin-left: 50px;
+}
+
+.logo img
+{
+    max-width: 70px;
+    max-height: 70px;
+    object-fit: cover;
+}
+
+.navigation
+{
+    margin-left: 230px;
+}
+
+.navigation a
+{
+    text-decoration: none;
+    color: #fff;
+    margin-left: 50px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 1000;
+    line-height: normal;
+}
+
+.search
+{
+    margin-right: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search input
+{
+    min-width: 200px;
+    padding: 8px 14px;
+    align-items: flex-start;
+    gap: 10px;
+
+    border-color: #fff;
+    border-radius: 5px;
+    background: #000000;
+
+    color: #ffffff;
+    font-family: Nunito Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.search button
+{
+    border: none;
+    background-color: black;
+    color: #fff;
+    margin-left: 5px;
+}
+
+.search a
+{
+    text-decoration: none;
+    color: #fff;
+    margin-left: 40px;
+    margin-top: 7px;
+}
+
+
+
+
+
+/* Goods */
+
+.cart
+{
+    margin-top: 70px;
+}
+
+.goods-in-cart
+{
+    background-color: #7b7b7b;
+    padding: 0 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+}
+
+.good-card
+{
+    flex-shrink: 3;
+    margin-top: 10px;
+    width: 300px;
+    min-width: auto;
+    background-color: black;
+}
+
+.good-card img
+{
+    max-width: 300px;
+    min-width: auto;
+    min-height: 400px;
+    object-fit: cover;
+}
+
+.title-and-button
+{
+    padding: 0 10px 5px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-title p
+{
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.card-title span
+{
+    margin-top: 5px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.card-title a
+{
+    text-decoration: none;
+    color: #fff;
+}
+
+.amount-of-good
+{
+
+}
+
+
+
+
+
+
+/* HTML КНОПКА КОЛИЧЕСТВА ВНУТРИ ТАБЛИЦЫ */
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button
+{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.number-input
+{
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    width: 100px;
+    height: 50px;
+    /* margin-left: 10px; */
+}
+
+.number-input input
+{
+    text-align: center;
+    width: 40px;
+    height: 50px;
+    flex-shrink: 0;
+
+    border: none;
+    color: #888;
+    text-align: center;
+    font-family: Nunito Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 18.2px */
+
+    background: #E9EAEB;
+}
+
+.minus
+{
+    background: #ffffff;
+    border: none;
+    width: 30px;
+    height: 50px;
+    flex-shrink: 0;
+}
+
+
+.plus
+{
+    background-color: #ffffff;
+    border: none;
+    width: 30px;
+    height: 50px;
+    flex-shrink: 0;
+}

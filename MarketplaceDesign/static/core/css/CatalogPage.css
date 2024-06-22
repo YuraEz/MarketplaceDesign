@@ -1,0 +1,166 @@
+/* Header */
+
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: Nunito Sans;
+    background-color: #000000;
+}
+
+.header-line
+{
+    position: fixed;
+    top: 0;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 70px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo
+{
+    margin-left: 50px;
+}
+
+.logo img
+{
+    max-width: 70px;
+    max-height: 70px;
+    object-fit: cover;
+}
+
+.navigation
+{
+    margin-left: 230px;
+}
+
+.navigation a
+{
+    text-decoration: none;
+    color: #fff;
+    margin-left: 50px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 1000;
+    line-height: normal;
+}
+
+.search
+{
+    margin-right: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search input
+{
+    min-width: 200px;
+    padding: 8px 14px;
+    align-items: flex-start;
+    gap: 10px;
+
+    border-color: #fff;
+    border-radius: 5px;
+    background: #000000;
+
+    color: #ffffff;
+    font-family: Nunito Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.search button
+{
+    border: none;
+    background-color: black;
+    color: #fff;
+    margin-left: 5px;
+}
+
+.search a
+{
+    text-decoration: none;
+    color: #fff;
+    margin-left: 40px;
+    margin-top: 7px;
+}
+
+
+
+/* Goods */
+
+.all-goods
+{
+    margin-top: 70px;
+    padding: 0 50px;
+    display: grid;
+    /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+}
+
+.good-card
+{
+    margin-top: 10px;
+    width: 95%;
+    height: 100%;
+    /* min-width: auto; */
+    background-color: black;
+    margin: 5px;
+}
+
+.card-img img
+{
+    width: 100%;
+    min-width: auto;
+    min-height: 400px;
+    object-fit: cover;
+}
+
+.title-and-button
+{
+    padding: 5px 10px 5px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-title p
+{
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.card-title span
+{
+    margin-top: 5px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.card-title a
+{
+    text-decoration: none;
+    color: #fff;
+}
+
+.add-in-cart button
+{
+    background-color: black;
+    border: none;
+    color: white;
+    margin-top: 11px;
+    cursor: pointer;
+}

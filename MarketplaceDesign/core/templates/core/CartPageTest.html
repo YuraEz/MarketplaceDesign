@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Ваша корзина</h1>
+
+    <table>
+      <thead>
+        <tr>
+          <th>КАРТИНКА</th>
+          <th>Название товара</th>
+          <th>Количество</th>
+          <th>Цена за единицу</th>
+          <th>Общая стоимость</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for cart_item in cart_items %}
+          <tr>
+            <td><img src="{{ cart_item.good.img.url }}" alt=""></td>
+            <td>{{ cart_item.good.name }}</td>
+            <td>{{ cart_item.quantity }}</td>
+            <td>{{ cart_item.good.price }}</td>
+            <td>{{ cart_item.total_price }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+    <p>Общее количество товаров в корзине: {{ cart.total_products }}</p>
+    <p>Общая стоимость корзины: {{ cart.final_price }}</p>
+
+</body>
+</html>

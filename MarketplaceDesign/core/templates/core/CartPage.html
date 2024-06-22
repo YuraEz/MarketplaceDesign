@@ -1,0 +1,115 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Nunito+Sans:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'core/css/CartPage.css' %}">
+    <script src="{% static 'core/js/Logics.js' %}"></script>
+    <title>Cart</title>
+</head>
+<body>
+    <div class="header-line">
+        <div class="logo">
+            <img src="{% static 'core/img/logo.png' %}" alt="Logo">
+        </div>
+
+        <div class="navigation">
+            <a href="{% url 'Catalog' %}">Shop</a>
+            <a href="#">Reviews</a>
+            <a href="#">About us</a>
+        </div>
+
+        <div class="search">
+            <input type="text" placeholder="Search">
+            <button>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.66668 7.33325C2.66668 4.75592 4.75601 2.66659 7.33334 2.66659C9.91067 2.66659 12 4.75592 12 7.33325C12 9.91058 9.91067 11.9999 7.33334 11.9999C4.75601 11.9999 2.66668 9.91058 2.66668 7.33325ZM7.33334 1.33325C4.01964 1.33325 1.33334 4.01954 1.33334 7.33325C1.33334 10.647 4.01964 13.3333 7.33334 13.3333C8.75002 13.3333 10.052 12.8423 11.0785 12.0212L13.5286 14.4713C13.789 14.7317 14.2111 14.7317 14.4714 14.4713C14.7318 14.211 14.7318 13.7889 14.4714 13.5285L12.0213 11.0784C12.8424 10.0519 13.3333 8.74993 13.3333 7.33325C13.3333 4.01954 10.6471 1.33325 7.33334 1.33325Z" fill="currentColor"></path>
+                </svg>
+            </button>
+            <a href="">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.33333 5.33325C5.33333 3.86049 6.52724 2.66659 8 2.66659C9.47276 2.66659 10.6667 3.86049 10.6667 5.33325C10.6667 6.80601 9.47276 7.99992 8 7.99992C6.52724 7.99992 5.33333 6.80601 5.33333 5.33325ZM8 1.33325C5.79086 1.33325 4 3.12411 4 5.33325C4 6.60847 4.59674 7.74431 5.52621 8.47677C3.53569 9.27559 1.99333 11.0086 1.36079 13.1439C1.25621 13.4969 1.45762 13.8679 1.81065 13.9725C2.16367 14.077 2.53463 13.8756 2.63921 13.5226C3.36546 11.071 5.50987 9.33325 8 9.33325C10.4901 9.33325 12.6345 11.071 13.3608 13.5226C13.4654 13.8756 13.8363 14.077 14.1894 13.9725C14.5424 13.8679 14.7438 13.4969 14.6392 13.1439C14.0067 11.0086 12.4643 9.27559 10.4738 8.47677C11.4033 7.74431 12 6.60847 12 5.33325C12 3.12411 10.2091 1.33325 8 1.33325Z" fill="currentColor"></path>
+                </svg>
+            </a>
+            <a href="{% url 'Cart' %}">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.99999 0.666748C6.15904 0.666748 4.66666 2.15913 4.66666 4.00008V4.66675H3.17704C2.5046 4.66675 1.9374 5.16746 1.854 5.8347L0.853998 13.8347C0.754523 14.6305 1.37504 15.3334 2.17704 15.3334H13.823C14.6249 15.3334 15.2455 14.6305 15.146 13.8347L14.146 5.8347C14.0626 5.16746 13.4954 4.66675 12.823 4.66675H11.3333V4.00008C11.3333 2.15913 9.84094 0.666748 7.99999 0.666748ZM9.99999 6.00008V7.33342C9.99999 7.7016 10.2985 8.00008 10.6667 8.00008C11.0348 8.00008 11.3333 7.7016 11.3333 7.33342V6.00008H12.823L13.823 14.0001L2.17704 14.0001L3.17704 6.00008H4.66666V7.33342C4.66666 7.7016 4.96513 8.00008 5.33332 8.00008C5.70151 8.00008 5.99999 7.7016 5.99999 7.33342V6.00008H9.99999ZM9.99999 4.66675V4.00008C9.99999 2.89551 9.10456 2.00008 7.99999 2.00008C6.89542 2.00008 5.99999 2.89551 5.99999 4.00008V4.66675H9.99999Z" fill="currentColor"></path>
+                </svg>
+            </a>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    {% if no_cart_message %}
+    <div class="empty_cart">
+        <h2>Cart:</h2>
+        <span>Your cart is emptys</span>
+
+    </div>
+    {% else %}
+
+    <div class="cart">
+        <h3>{{cart.user}}'s cart:</h3>
+        <h3>{{cart.created_time}}</h3>
+        <p>Общее количество товаров в корзине: {{ cart.total_products }}</p>
+        <p>Общая стоимость корзины: {{ cart.final_price }}</p>
+        <h3>{{cart.in_order}}</h3>
+
+        <div class="goods-in-cart">
+
+            {% for cart_item in cart_items %}
+
+                <div class="good-card">
+                    <!-- <form method='post' action="{% url 'AddOrRemove' cart_item.id %}"> {% url 'RemoveFromCart' cart_item.id %}
+                        {% csrf_token %} -->
+                        <img src="{{ cart_item.good.img.url }}" alt="">
+
+                        <div class="title-and-button">
+                            <div class="card-title">
+                                <p><a href="{% url 'GoodInfo' cart_item.good.id %}">{{ cart_item.good.name }}</a></p>
+                                <span><a href="{% url 'GoodInfo' cart_item.good.id %}">{{ cart_item.good.price }} $</a></span>
+                            </div>
+
+                            <div class="amount-of-good">
+                                <div class="number-input">
+                                    <form method='post' action="{% url 'RemoveFromCart' cart_item.id %}">
+                                        {% csrf_token %}
+                                        <button type="submit" name="minun-btn" class="minus" onclick="decrease('{{ cart_item.good.name }}')">-</button>
+                                    </form>
+
+                                    <input type="number" id="{{ cart_item.good.name }}" value="{{ cart_item.quantity }}" />
+
+                                    <form method='post' action="{% url 'AddInCart' cart_item.good.id %}">
+                                        {% csrf_token %}
+                                        <button type="submit" name="plus-btn" class="plus" onclick="increase('{{ cart_item.good.name }}')">+</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- <button type="submit">Remove from cart</button> -->
+                    <!-- </form> -->
+                </div>
+
+            {% endfor %}
+        </div>
+    </div>
+    {% endif %}
+
+
+
+</body>
+</html>
